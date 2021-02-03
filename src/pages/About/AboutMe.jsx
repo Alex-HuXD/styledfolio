@@ -12,7 +12,7 @@ const AboutMe = () => {
             <Left src={img} alt="#" />
             <Right>
               Hello, I'm Alex, <br />
-              I'm self-taught developer with a passion for developing innovative
+              I'm full-stack developer with a passion for developing innovative
               programs and a proud father of two awesome daughters
             </Right>
           </Content>
@@ -27,6 +27,7 @@ export default AboutMe;
 const HeroSection = styled.div`
   height: 100vh;
   padding: 100px 0;
+  background: whitesmoke;
 `;
 
 const Intro = styled.div`
@@ -37,10 +38,14 @@ const Intro = styled.div`
 const Title = styled.div`
   position: relative;
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 600;
   margin-bottom: 60px;
   padding-bottom: 15px;
+
+  @media screen and (max-width: 960px) {
+    font-size: 38px;
+  }
 
   &::before {
     content: "";
@@ -61,12 +66,11 @@ const Title = styled.div`
     font-size: 20px;
     padding: 5px;
     color: var(--hight-light);
-    background: white;
+    background: whitesmoke;
     transform: translateX(-50%);
 
     @media screen and (max-width: 960px) {
       font-size: 14px;
-      font-weight: 400;
     }
   }
 `;
@@ -88,13 +92,12 @@ const Left = styled.img`
 
 const Right = styled.p`
   width: 60%;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-  font-style: italic;
+  /* font-family: "Open Sans", sans-serif; */
 
   @media screen and (max-width: 960px) {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400;
     padding: 10px 0;
     margin: 0;

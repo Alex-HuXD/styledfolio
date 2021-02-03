@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import AboutMe from "./pages/About/AboutMe";
 import Project from "./pages/Projects/Project";
 import Footer from "./components/Footer/Footer";
+import ProjectsSlider from "./components/ProjectsContainer/ProjectsSlider";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Navbar />
       <HomePage />
       <AboutMe />
-      <Project />
+      <ProjectsSlider />
       <Footer />
     </BrowserRouter>
   );
