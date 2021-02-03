@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Gallery from "../../components/AboutGallery/Gallery";
+import img from "./img.jpg";
 
 const AboutMe = () => {
   return (
@@ -9,13 +9,12 @@ const AboutMe = () => {
         <Intro>
           <Title>About Me</Title>
           <Content>
-            <Gallery />
-
-            <Text>
-              Hello, my name is Alex Hu, <br />
-              I'm a Proud father of two awesome daughters and Self-taught
-              developer with a passion for developing innovative programs.
-            </Text>
+            <Left src={img} alt="#" />
+            <Right>
+              Hello, I'm Alex, <br />
+              I'm self-taught developer with a passion for developing innovative
+              programs and a proud father of two awesome daughters
+            </Right>
           </Content>
         </Intro>
       </HeroSection>
@@ -32,6 +31,7 @@ const HeroSection = styled.div`
 
 const Intro = styled.div`
   margin: 55px 50px;
+  height: 400px;
 `;
 
 const Title = styled.div`
@@ -63,24 +63,40 @@ const Title = styled.div`
     color: var(--hight-light);
     background: white;
     transform: translateX(-50%);
+
+    @media screen and (max-width: 960px) {
+      font-size: 14px;
+      font-weight: 400;
+    }
   }
 `;
 
 const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 35px 30px;
+  gap: 30px 30px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 120px;
 `;
 
-const Text = styled.p`
-  width: 55%;
+const Left = styled.img`
+  width: auto;
+  height: 300px;
+  border-radius: 18px;
+`;
+
+const Right = styled.p`
+  width: 60%;
   font-size: 25px;
   font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
 
   @media screen and (max-width: 960px) {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
+    padding: 10px 0;
+    margin: 0;
   }
 `;
