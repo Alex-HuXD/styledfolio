@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --bg-dark: #202020;
+  --bg-light: #3f3f3f;
+  --bg-blue: #12343b;
+  --yellow: #b48c36;
+  --high-light: rgb(246, 234, 63);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}

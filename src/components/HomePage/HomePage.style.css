@@ -1,0 +1,61 @@
+.home {
+  display: flex;
+  background-image: url("/src/components/HomePage/portfolio-pic.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: whitesmoke;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.home .container {
+  margin: auto 0 12rem 2rem;
+  transition: all 0.2s ease-out;
+}
+
+.text-1 {
+  font-size: 30px;
+}
+.text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+.text-3 span {
+  color: var(--high-light);
+  font-weight: 500;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.social-media a:hover {
+  filter: brightness(0.8);
+}
+
+@media screen and (max-width: 865px) {
+  .text-2 {
+    font-size: 55px;
+  }
+  .text-3 {
+    font-size: 25px;
+  }
+
+  .home .container {
+    margin: auto 0 auto 0px;
+  }
+  .social-media {
+    gap: 25px;
+    font-size: 20px;
+  }
+}

@@ -25,9 +25,11 @@ const AboutMe = () => {
 export default AboutMe;
 
 const HeroSection = styled.div`
+  position: relative;
   height: 100vh;
-  padding: 100px 0;
+  padding: 50px 0;
   background: whitesmoke;
+  min-width: 350px;
 `;
 
 const Intro = styled.div`
@@ -45,6 +47,8 @@ const Title = styled.div`
 
   @media screen and (max-width: 960px) {
     font-size: 38px;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
   }
 
   &::before {
@@ -86,8 +90,11 @@ const Content = styled.div`
 
 const Left = styled.img`
   width: auto;
-  height: 300px;
+  height: 400px;
   border-radius: 18px;
+  @media screen and (max-width: 960px) {
+    height: 250px;
+  }
 `;
 
 const Right = styled.p`
@@ -97,9 +104,10 @@ const Right = styled.p`
   /* font-family: "Open Sans", sans-serif; */
 
   @media screen and (max-width: 960px) {
+    width: 100%;
     font-size: 22px;
     font-weight: 400;
-    padding: 10px 0;
+    padding-bottom: 20px;
     margin: 0;
   }
 `;
