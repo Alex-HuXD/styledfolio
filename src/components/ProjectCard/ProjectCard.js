@@ -22,11 +22,15 @@ const Card = styled.div`
   width: 80%;
   min-width: 65%;
   height: 80%;
-  transition: 0.5s ease;
+  transition: 0.6s ease;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 60px;
+
+  &:hover {
+    scale: 1.1;
+  }
 
   @media screen and (max-width: 760px) {
     height: 60%;

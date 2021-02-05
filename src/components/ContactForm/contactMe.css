@@ -1,9 +1,10 @@
 .contact {
   height: 100vh;
   width: 100%;
-  background: coral;
+  background: var(--bg-medium);
   display: flex;
   flex-direction: column;
+  gap: 20px;
   align-items: center;
   justify-content: center;
   font-family: "Ubuntu", sans-serif;
@@ -25,10 +26,12 @@
   text-align: center;
   font-size: 40px;
   font-weight: 500;
+  color: whitesmoke;
 }
 
 .contact .container .subTitle {
-  font-weight: 400;
+  font-weight: 600;
+  color: var(--high-light);
 }
 
 .contact-form {
@@ -38,7 +41,8 @@
   margin: 0;
   margin-bottom: 120px;
   box-sizing: border-box;
-  background: aliceblue;
+  background: var(--yellow);
+  border-radius: 12px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -58,8 +62,9 @@
   width: 100%;
   padding: 6px;
   font-size: 18px;
-  border: 1px solid yellow;
+  border: none;
   margin-top: 5px;
+  border-radius: 8px;
 }
 
 textarea {
@@ -70,12 +75,34 @@ button[type="submit"] {
   width: 100%;
   border: none;
   outline: none;
+  background: whitesmoke;
   margin-top: 5px;
   padding: 10px;
   font-size: 24px;
   border-radius: 8px;
   font-weight: 600;
-  color: blue;
+  color: var(--high-light);
   text-align: center;
   cursor: pointer;
+}
+
+@media screen and (max-width: 860px) {
+  .contact {
+    height: auto;
+  }
+  .contact-form {
+    margin-top: 50px;
+  }
+  .contact-form .form-group {
+    font-size: 16px;
+    margin: 5px auto 5px 20px;
+    width: 80%;
+  }
+
+  button[type="submit"] {
+    font-size: 16px;
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
 }

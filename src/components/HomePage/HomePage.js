@@ -12,7 +12,7 @@ const HomePage = () => {
             <div className="text-1">Hello, my name is</div>
             <div className="text-2">Alex Hu</div>
             <div className="text-3">
-              And I'm a <span>Full-Stack developer</span>
+              And I'm a <span>Full-Stack Developer</span>
             </div>
             <div className="social-media">
               <a
@@ -24,7 +24,7 @@ const HomePage = () => {
               <a href="https://github.com/Alex-HuXD" target="_blank">
                 <FaGithub style={{ color: "whitesmoke" }} />
               </a>
-              <a>
+              <a href="#contact">
                 <MdEmail style={{ color: "whitesmoke" }} />
               </a>
             </div>

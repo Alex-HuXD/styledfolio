@@ -17,7 +17,7 @@ import { GrGraphQl } from "react-icons/gr";
 const ABout = () => {
   return (
     <>
-      <section className="about">
+      <section className="about" id="about">
         <div className="container">
           <h2 className="title">About me</h2>
           <div className="about-content">
@@ -26,10 +26,10 @@ const ABout = () => {
             </div>
             <div className="right side">
               <div className="text">
-                I'm Alex, and I'm a <sapn>developer</sapn>
+                I'm Alex, and I'm a <sapn>Developer</sapn>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                hello Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dignissimos molestias quidem adipisci deserunt architecto
                 distinctio nostrum laboriosam dolore, nisi voluptas quam, vel
                 temporibus! Officiis laborum minima dolor, magnam tempora

@@ -75,7 +75,7 @@
     width: 100%;
     left: -100%;
     top: 0;
-    background: var(--bg-blue);
+    background: var(--bg-medium);
     text-align: center;
     padding-top: 20%;
     transition: all 0.5s ease;

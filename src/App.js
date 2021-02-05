@@ -9,21 +9,18 @@ import HomePage from "./components/HomePage/HomePage";
 import ABout from "./components/About/ABout";
 import ProjectsSlider from "./components/ProjectsContainer/ProjectsSlider";
 import ContactMe from "./components/ContactForm/ContactMe";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
-      {/* <GlobalStyle /> */}
+    <>
       <NavBar />
       <HomePage />
       <ABout />
       <ProjectsSlider />
       <ContactMe />
-      {/* <HomePage />
-      <AboutMe />
-      <ProjectsSlider />
-      <Footer /> */}
-    </BrowserRouter>
+      <Footer />
+    </>
   );
 }
 

@@ -31,11 +31,15 @@ const ContactMe = () => {
           <h2 className="title">Contact Me</h2>
           <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
             <div
-              style={{ height: "2px", width: "50px", background: "yellow" }}
+              style={{
+                height: "2px",
+                width: "50px",
+                background: "whitesmoke",
+              }}
             ></div>
             <h3 className="subTitle">Get in touch</h3>
             <div
-              style={{ height: "2px", width: "50px", background: "yellow" }}
+              style={{ height: "2px", width: "50px", background: "whitesmoke" }}
             ></div>
           </div>
         </div>
@@ -81,6 +85,8 @@ const ContactMe = () => {
                 id="message"
                 name="message"
                 placeholder="your message"
+                rows="8"
+                cols="50"
                 required
               />
             </div>

@@ -1,0 +1,43 @@
+footer {
+  height: 200px;
+  font-family: "Encode Sans", sans-serif;
+  background: var(--bg-dark);
+  padding: 20px 25px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media a {
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+footer .text span {
+  color: var(--high-light);
+  text-decoration: none;
+}
+
+footer .text span :hover {
+  text-decoration: underline;
+}
+
+footer hr {
+  height: 1px;
+  width: 45%;
+}
+.copyright {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+@media (max-width: 865px) {
+  footer .text {
+    font-size: 14px;
+    text-align: center;
+  }
+}

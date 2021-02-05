@@ -3,7 +3,6 @@ import "./NavBar.style.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavBar = () => {
-  // hide bg color
   const [bg, setBg] = useState(false);
   const [click, setClick] = useState(true);
 
@@ -20,22 +19,22 @@ const NavBar = () => {
       <div className={bg ? `navbar active` : `navbar`}>
         <div className="container">
           <div className="logo">
-            <a href="#">
+            <a href="#home">
               My<span>folio.</span>
             </a>
           </div>
-          <ul className={click ? `menu` : `menu active`}>
+          <ul className={click ? `menu` : `menu active`} onClick={handleClick}>
             <li>
-              <a href="">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="">ABout Me</a>
+              <a href="#about">About Me</a>
             </li>
             <li>
-              <a href="">Projects</a>
+              <a href="#project">Projects</a>
             </li>
             <li>
-              <a href="">Contact Me</a>
+              <a href="#contact">Contact Me</a>
             </li>
           </ul>
           <div className="menu-btn">
